@@ -60,6 +60,5 @@ int main(){
       cout<< "(this is global function) a + b = " << add(a, b) << endl;
       cout<< "(this is member function) a + b = " << c.add_member(a, b) << endl;
 
-      
 }
 

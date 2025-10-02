@@ -2,12 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Run Calculator",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/calculator",
+      "args": [],
+      "cwd": "${workspaceFolder}/projects",
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "MIMode": "lldb"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/damummyphus/cpp lectures/moonchild.cpp/week one",
-      "program": "/Users/damummyphus/cpp lectures/moonchild.cpp/week one/build/Debug/outDebug"
+      "cwd": "/Users/damummyphus/moonchild.cpp/projects",
+      "program": "/Users/damummyphus/moonchild.cpp/projects/build/Debug/outDebug"
     }
   ]
 }
