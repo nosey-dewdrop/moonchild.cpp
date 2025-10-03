@@ -27,7 +27,7 @@ int main(){
       B2[0].displayId();
 
       Book B3[3]; // STACK 3 object
-      Book B3[3] = { Book(301), Book(302), Book(303) }; //de yapabilirdin.
+      //Book B3[3] = { Book(301), Book(302), Book(303) }; //de yapabilirdin.
       B3[0] = Book(301);
       B3[1] = Book(302);
       B3[2] = Book(303);
@@ -60,9 +60,9 @@ int main(){
       **z = 100; // super indirect access
       cout << "\nnew x value = " << x << endl;
 
-      int arr[3] = {10, 20, 30};
-      cout << arr[1];    
-      cout << *(arr+1); 
+      // int arr[3] = {10, 20, 30};
+      // cout << arr[1];    
+      // cout << *(arr+1); 
 
       int a = 10;
       int b = 20;
@@ -70,7 +70,7 @@ int main(){
       int *p1 = &a;
       int *p2 = &b;
 
-      cout<< "a = " << a << endl;
+      cout<< "\na = " << a << endl;
       cout<< "b = " << b << endl;
 
       cout<< "\np1 = " << p1 << endl;
@@ -81,7 +81,7 @@ int main(){
 
       p2 = p1;
       cout << "\nafter assignment, *p2 = " << *p2;
-      if (p1 == p2) cout << "\np1 and p2 point to the same location.";
+      if (p1 == p2) cout << "\np1 and p2 point to the same location."<<endl;
 
       int arr[3] = {11, 22, 33};
       int* p1_arr = arr; // went to adress of arr[0]. dereferance it, result is arr[0]
@@ -90,39 +90,39 @@ int main(){
       cout << "p1_arr = " << p1_arr << endl; 
       cout << "&arr = " << &arr << endl; 
 
-      int a = arr[0]; // new integer created by COPYING arr[0]
-      int* p1 = &a;
+      int copy = arr[0]; // new integer created by COPYING arr[0]
+      int* copy_p1 = &copy;
 
-      cout << "\n*p1 = " << *p1 << endl;
-      cout << "p1 = " << p1 << endl;
+      cout << "\ncopy_p1 = " << *copy_p1 << endl;
+      cout << "copy_p1 = " << copy_p1 << endl;
 
 
 
       //SWAPPING
 
-      int a = 5;
-      int b = 7;
+      int k = 5;
+      int q = 7;
 
-      cout << "before swapping a = " << a << endl;
-      cout << "before swapping b = " << b << endl;
+      cout << "\nbefore swapping a = " << k << endl;
+      cout << "before swapping b = " << q << endl;
 
-      cout << "before swapping &a = " << &a << endl;
-      cout << "before swapping &b = " << &b << endl;
+      cout << "before swapping &a = " << &k << endl;
+      cout << "before swapping &b = " << &q << endl;
 
-      int* p1 = &a;
-      int* p2 = &b;
+      int* pointer1 = &k;
+      int* pointer2 = &q;
 
       //a ve b adreslerini aldık. adresi değiştirmeden oradaki integerları değiştirmemiz gerek.
-      int temp = *p1; //p1 pointerının gösterdiği yerdeki integer değeri temporary'ye verdik.
-      *p1 = *p2; //p1'İn gösterdiği adresteki yere yeni bir değer koyalım. bu değer p2'deki değer olsun.
-      *p2 = temp; //p2'nin gösterdiği yerdeki değeri de temp yapalım. 
+      int temp = *pointer1; //p1 pointerının gösterdiği yerdeki integer değeri temporary'ye verdik.
+      *pointer1 = *pointer2; //p1'İn gösterdiği adresteki yere yeni bir değer koyalım. bu değer p2'deki değer olsun.
+      *pointer2 = temp; //p2'nin gösterdiği yerdeki değeri de temp yapalım. 
 
       cout << "\ntemp = " << temp << endl;
-      cout << "after swapping a = " << a << endl;
-      cout << "after swapping b = " << b << endl;
+      cout << "after swapping k = " << k << endl;
+      cout << "after swapping q = " << q << endl;
 
-      cout << "after swapping &a = " << &a << endl;
-      cout << "after swapping &b = " << &b << endl;
+      cout << "after swapping &k = " << &k << endl;
+      cout << "after swapping &q = " << &q << endl;
 
       //değerler değişti ama adresler değişmedi. 
 
